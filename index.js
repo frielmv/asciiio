@@ -300,9 +300,9 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/client')));
-const PORT = 6942;
+const PORT = 3000;
 // get this using "ipconfig" in command prompt
-const HOST = '10.16.110.22';
+const HOST = 'localhost';
 app.listen(PORT, function() {
   console.log('Server running at ' + chalk.bold(`http://${HOST}:${PORT}`) + '.');
 });
